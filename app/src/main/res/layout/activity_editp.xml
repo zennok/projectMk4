@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Primary #"
+        android:textSize="35sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="65dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/edit_message"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="____________"
+            android:textSize="40sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="20dp"
+            android:maxLength="10"
+            android:inputType="phone|number"/>
+
+        <Button
+            android:id="@+id/confirm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="confirm"
+            android:layout_alignRight="@id/edit_message"
+            android:layout_below="@id/edit_message"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
